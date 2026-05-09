@@ -1,0 +1,2 @@
+200
+{"access_token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5ZGQ0YWYyZi1lYzQ5LTQ5MjAtYTVlNC1iMGJkMGFjYTI5ODEiLCJleHAiOjE3NzgzNDIwMzR9.svzzmU7r3I-7RHlZRoy-zq5BouIWCssO-6Ln2S2NKAo","user":{"id":"9dd4af2f-ec49-4920-a5e4-b0bd0aca2981","username":"admin","email":"admin@dna.io","avatar":null,"bio":null,"location":null,"xp":9999,"level":50,"badges":[],"followers":0,"following":0,"role":"admin","is_verified":false,"is_seller":false,"created_at":"2026-05-08T15:50:13.754614"}}

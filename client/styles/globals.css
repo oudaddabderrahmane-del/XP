@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply bg-black text-white antialiased;
+  font-family: 'Inter', 'Poppins', system-ui, -apple-system, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', 'Inter', sans-serif;
+  @apply font-bold tracking-tight;
+}
+
+/* Glassmorphism */
+.glass {
+  @apply backdrop-blur-xl bg-white/[0.03] border border-white/[0.06] rounded-xl;
+}
+
+.glass-lg {
+  @apply backdrop-blur-xl bg-white/[0.02] border border-white/[0.08] rounded-2xl;
+}
+
+.glass-card {
+  @apply backdrop-blur-xl bg-[#1A1A1A] border border-[#BFC3C7]/10 rounded-xl;
+}
+
+/* XP Neon & RGB Effects */
+.neon-xp {
+  @apply text-white drop-shadow-[0_0_8px_rgba(191,195,199,0.6)];
+}
+
+.rgb-hover {
+  @apply transition-all duration-300;
+}
+
+.rgb-hover:hover {
+  animation: rgb 2s linear infinite;
+  border-color: rgba(191, 195, 199, 0.3);
+}
+
+/* Cards */
+.card {
+  @apply glass-card p-6 hover:border-[#BFC3C7]/30 transition-all duration-300 cursor-pointer;
+}
+
+/* Buttons */
+.btn {
+  @apply px-6 py-2 rounded-lg font-semibold transition-all duration-200;
+}
+
+.btn-primary {
+  @apply btn bg-white text-black hover:bg-[#BFC3C7] shadow-lg hover:shadow-white/20;
+}
+
+.btn-secondary {
+  @apply btn border border-[#BFC3C7]/20 text-[#BFC3C7] hover:bg-white/10;
+}
+
+.btn-ghost {
+  @apply btn text-gray-400 hover:text-white hover:bg-white/10;
+}
+
+/* Input Styles */
+input, textarea, select {
+  @apply bg-[#1A1A1A] border border-[#BFC3C7]/10 text-white placeholder-gray-500 rounded-lg px-4 py-3 focus:outline-none focus:border-[#BFC3C7]/30 focus:ring-1 focus:ring-[#BFC3C7]/20 transition;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#BFC3C7]/20 rounded-full hover:bg-[#BFC3C7]/40;
+}
+
+/* Scanning line effect */
+.scan-line {
+  @apply relative overflow-hidden;
+}
+
+.scan-line::after {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#BFC3C7]/50 to-transparent;
+  animation: scan 4s linear infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes rgb {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}

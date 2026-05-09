@@ -1,0 +1,14 @@
+=== Build Estimate Results ===
+Status: 200
+FPS 1080p: 240
+FPS 1440p: 180
+FPS 4K: 120
+Bottleneck: Great balance for high-end gaming (0%)
+Temperature: Moderate (60-75°C) — Air cooling sufficient
+Power Draw: 590W
+
+=== API Key ===
+Status: 200
+Response: {'key': 'dna_api_89476d5020283d6ec6d7e92c04ba81da347bb1d1d417b32a', 'id': '22837445-8b99-41d4-812b-6d5de2a97fb4', 'name': 'TestKey'}
+
+All endpoints working!
